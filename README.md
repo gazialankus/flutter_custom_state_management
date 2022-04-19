@@ -1,16 +1,13 @@
 # state_management
 
-A new Flutter project.
+A manual state management sample
 
-## Getting Started
+## Explanation
 
-This project is a starting point for a Flutter application.
+I created this project during a lecture to demonstrate manual state management, why it's difficult, things that need to happen and how one could do them. 
 
-A few resources to get you started if this is your first Flutter project:
+This is meant to be a motivator for using a state management solution and reminds you things that such a solution is supposed to accomplish.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Note that we could use `AnimatedBuilder` instead of `.addListener()`/`.removeListener()` pairs but the end result would be the same. 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+One thing that we did not solve was that `RecordPage` does not update after you edit a record and go back. 
